@@ -29,7 +29,12 @@ if(defined('SERVER_ENV')){
 				'user'=>'root',
 				'pass'=>'learnlearn'
 			)));
-			
+            define('DB_BGSpin', serialize(array(
+                'host'=>'localhost',
+                'db_name'=>'bargames_spin',
+                'user'=>'root',
+                'pass'=>'learnlearn'
+            )));
 		break;
         case('prod'):
             define('DB_1', serialize(array(
@@ -44,7 +49,12 @@ if(defined('SERVER_ENV')){
                 'user'=>'evillabs',
                 'pass'=>'gaM3rPuPu'
             )));
-
+            define('DB_BGSpin', serialize(array(
+                'host'=>'lab.cv7i1bpkvj0w.us-east-1.rds.amazonaws.com',
+                'db_name'=>'bargames_spin',
+                'user'=>'evillabs',
+                'pass'=>'gaM3rPuPu'
+            )));
         break;
 	}
 	
