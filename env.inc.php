@@ -18,19 +18,34 @@ if(defined('SERVER_ENV')){
 	switch(SERVER_ENV){
 		case('local'):			
 			define('DB_1', serialize(array(
-				'host'=>'lab.cv7i1bpkvj0w.us-east-1.rds.amazonaws.com',
+				'host'=>'localhost',
 				'db_name'=>'bargames',
-				'user'=>'evillabs',
-				'pass'=>'gaM3rPuPu'
+				'user'=>'root',
+				'pass'=>'learnlearn'
 			)));
 			define('DB_0', serialize(array(
-				'host'=>'lab.cv7i1bpkvj0w.us-east-1.rds.amazonaws.com',
+				'host'=>'localhost',
 				'db_name'=>'util',
-				'user'=>'evillabs',
-				'pass'=>'gaM3rPuPu'
+				'user'=>'root',
+				'pass'=>'learnlearn'
 			)));
 			
 		break;
+        case('prod'):
+            define('DB_1', serialize(array(
+                'host'=>'lab.cv7i1bpkvj0w.us-east-1.rds.amazonaws.com',
+                'db_name'=>'bargames',
+                'user'=>'evillabs',
+                'pass'=>'gaM3rPuPu'
+            )));
+            define('DB_0', serialize(array(
+                'host'=>'lab.cv7i1bpkvj0w.us-east-1.rds.amazonaws.com',
+                'db_name'=>'util',
+                'user'=>'evillabs',
+                'pass'=>'gaM3rPuPu'
+            )));
+
+        break;
 	}
 	
 	
