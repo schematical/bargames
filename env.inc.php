@@ -6,8 +6,8 @@ if(!defined('SERVER_ENV')){
 			define('MLC_APPLICATION_NAME', 'bargames');
 			define('MLC_APPLICATION_PREFIX', 'BG');
 		break;
-		case('bargameify.com'):
-        case('www.bargameify.com'):
+		case('bargamify.com'):
+        case('www.bargamify.com'):
 			define('SERVER_ENV', 'prod');
 			define('MLC_APPLICATION_NAME', 'bargames');
 			define('MLC_APPLICATION_PREFIX', 'BG');
@@ -18,16 +18,16 @@ if(defined('SERVER_ENV')){
 	switch(SERVER_ENV){
 		case('local'):			
 			define('DB_1', serialize(array(
-				'host'=>'localhost',
+				'host'=>'lab.cv7i1bpkvj0w.us-east-1.rds.amazonaws.com',
 				'db_name'=>'bargames',
-				'user'=>'root',
-				'pass'=>'learnlearn'
+				'user'=>'evillabs',
+				'pass'=>'gaM3rPuPu'
 			)));
 			define('DB_0', serialize(array(
-				'host'=>'localhost',
+				'host'=>'lab.cv7i1bpkvj0w.us-east-1.rds.amazonaws.com',
 				'db_name'=>'util',
-				'user'=>'root',
-				'pass'=>'learnlearn'
+				'user'=>'evillabs',
+				'pass'=>'gaM3rPuPu'
 			)));
 			
 		break;
