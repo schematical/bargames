@@ -41,7 +41,7 @@ class index extends BGForm{
 		$objVenue->CurrGameNamespace = 'spin';//TODO fix hack
 		$objVenue->Save();
 		$this->pnlSetup->SaveAll();
-		$this->Redirect($objVenue->Namespace .'/iframe.php');
+		$this->Redirect('/home.php');
 	}
 }
 index::Run('index');

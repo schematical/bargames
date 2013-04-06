@@ -18,8 +18,13 @@
 				<li>
 					Press 'F12' to full screen the app
 				</li>
+                <li>
+                   Click the button below
+                </li>
 			</ul>
-			
+            <a class='btn' href='http://<?php echo $this->strUrl; ?>/iframe.php'>
+                Open this link
+            </a>
 		</div>
 		<div class='span5 well'>
 			<h2>

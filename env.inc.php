@@ -1,7 +1,7 @@
 <?php
 if(!defined('SERVER_ENV')){
 	switch($_SERVER['SERVER_NAME']){
-		case('bargames.schematical.com'):
+        case('local.bargamify.com'):
 			define('SERVER_ENV', 'local');
 			define('MLC_APPLICATION_NAME', 'bargames');
 			define('MLC_APPLICATION_PREFIX', 'BG');
