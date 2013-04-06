@@ -6,8 +6,9 @@ if(!defined('SERVER_ENV')){
 			define('MLC_APPLICATION_NAME', 'bargames');
 			define('MLC_APPLICATION_PREFIX', 'BG');
 		break;
-		case('gen.schematical.com'):
-			define('SERVER_ENV', 'dev');
+		case('bargameify.com'):
+        case('www.bargameify.com'):
+			define('SERVER_ENV', 'prod');
 			define('MLC_APPLICATION_NAME', 'bargames');
 			define('MLC_APPLICATION_PREFIX', 'BG');
 		break;
