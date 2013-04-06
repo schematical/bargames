@@ -26,7 +26,7 @@ require_once(__MODEL_BG_APP_DIR__ . '/_enum.inc.php');
 MLCApplication::InitPackage('MJax');
 MLCApplication::InitPackage('MJaxBootstrap');
 MLCApplication::InitPackage('MLCAuth');
-MLCApplication::InitPackage('MDE');
+//MLCApplication::InitPackage('MDE');
 MLCApplication::InitPackage('MLCDataLayer');
 MLCApplication::InitPackage('MLCTracking');
 MLCApplication::$objRewriteHandeler = new BGRewriteHandeler();
