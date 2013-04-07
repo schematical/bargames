@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="http://localhost:5033/socket.io/socket.io.js"></script>
+		<script>
+		$(function(){
+			  var socket = io.connect('http://localhost:5033');
+			  function Show(strData){
+			  	$('#divAll').append(strData + '<br/>');
+			  }
+			  socket.on('news', function (data) {
+			     Show(data);
+			  });
+			  
+			  $('#btnSendPrivate').click(function(){
+			  	
+			  	socket.emit(
+			  		'private message',
+			  		$('#txtName').val(),
+			  		$('#txtMessage').val()
+			  	);
+			  	
+			  });
+			  
+			   $('#btnSendAll').click(function(){
+			  	  socket.emit(
+			  	  	'public message',
+			  	  	$('#txtName').val(),
+			  	  	$('#txtMessage').val()
+			  	  );
+			  });
+			
+		});
+		</script>
+		
+	</head>
+	<body>
+		<div id='divAll' style='width: 100%'></div>
+		<input id='txtName' type='text' />
+		
+		<input id='txtMessage' type='text' />
+		<button id='btnSendPrivate'>Send Private</button>
+		<button id='btnSendAll'>Send All</button>
+	</body>
+</html>    
